@@ -17,8 +17,8 @@
     .home {
         widht: 100%;
         height: 100%;
-        background: url(../assets/bg.jpg) no-repeat;
-        background-size: 100% 100%;
+        background: url(../assets/bg1.jpg);
+        background-size: cover;
     }
     .container {
         width: 100%;
