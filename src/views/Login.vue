@@ -20,6 +20,13 @@
                 </el-form-item>
             </el-form>
         </el-card>
+
+        <!--  底部  -->
+        <div class="login-footer">
+            <span>© 2019 Zheng Jie Apache License 2.0</span>
+            <span> ⋅ </span>
+            <a href="http://www.beian.miit.gov.cn" target="_blank"> 浙ICP备18005431号-3</a>
+        </div>
     </div>
 </template>
 
@@ -93,13 +100,12 @@
 
 <style scoped>
     .login {
-        display: -webkit-box;
-        -webkit-box-pack: center; /*垂直居中*/
-        -webkit-box-align: center;/*水平居中*/
-        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         height: 100%;
-        background: url(../assets/bg.jpg) no-repeat center center;
-        background-size: 100% 100%;
+        background: url(../assets/bg.jpg);
+        background-size: cover;
     }
     .login .box-card {
         width: 400px;
@@ -122,5 +128,22 @@
     .submit_btn {
         display: block !important;
         width: 100%;
+    }
+    .login-footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        color: #fff;
+        font-family: Arial;
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+    .login-footer a {
+        cursor: pointer;
+        color: inherit;
+        text-decoration: none;
     }
 </style>
